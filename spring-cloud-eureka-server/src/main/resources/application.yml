@@ -1,0 +1,22 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: spring-cloud-eureka-server
+  security:
+    user:
+      name: leezy
+      password: 123456
+eureka:
+  client:
+    # 将服务注册到服务治理服务器上
+    registerWithEureka: false
+    # 是否需要从服务治理服务器中同步
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://leezy:123456@${eureka.host:127.0.0.1}:${eureka.port:8761}/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

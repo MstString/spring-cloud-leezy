@@ -1,0 +1,10 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+# 配置actuator接口
+info:
+  name: ${spring.application.name}
+  server: 
+    port: ${server.port}

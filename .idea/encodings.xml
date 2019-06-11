@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-admin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-data-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-hibernate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-user-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-zipkin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-zuul-server" charset="UTF-8" />
+  </component>
+</project>
