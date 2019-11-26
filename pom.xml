@@ -36,6 +36,7 @@
     	<module>spring-cloud-mybatis</module>
         <module>spring-cloud-hibernate</module>
         <module>spring-cloud-filter</module>
+        <module>spring-cloud-concurrency</module>
     </modules>
 
 	<properties>

@@ -7,18 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-admin-server" />
-        <module name="spring-cloud-zipkin-server" />
         <module name="spring-cloud-hystrix-dashboard" />
-        <module name="spring-cloud-user-service" />
-        <module name="spring-cloud-mybatis" />
-        <module name="spring-cloud-filter" />
-        <module name="spring-cloud-zuul-server" />
-        <module name="spring-cloud-data-service" />
-        <module name="spring-cloud-common" />
-        <module name="spring-cloud-hibernate" />
-        <module name="spring-cloud-eureka-server" />
-        <module name="spring-cloud-gateway" />
         <module name="spring-cloud-config-server" />
+        <module name="spring-cloud-zuul-server" />
+        <module name="spring-cloud-common" />
+        <module name="spring-cloud-gateway" />
+        <module name="spring-cloud-hibernate" />
+        <module name="spring-cloud-filter" />
+        <module name="spring-cloud-data-service" />
+        <module name="spring-cloud-user-service" />
+        <module name="spring-cloud-zipkin-server" />
+        <module name="spring-cloud-eureka-server" />
+        <module name="spring-cloud-mybatis" />
+      </profile>
+      <profile name="Annotation profile for spring-cloud-leezy" enabled="true">
+        <sourceOutputDir name="../spring-cloud-data-service/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-cloud-data-service/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-concurrency" />
       </profile>
     </annotationProcessing>
   </component>
@@ -26,6 +32,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-cloud-admin-server" options="-parameters" />
       <module name="spring-cloud-common" options="-parameters" />
+      <module name="spring-cloud-concurrency" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
       <module name="spring-cloud-data-service" options="-parameters" />
       <module name="spring-cloud-eureka-server" options="-parameters" />
