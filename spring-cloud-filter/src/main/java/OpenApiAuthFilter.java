@@ -1,4 +1,5 @@
 import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 /**
@@ -10,7 +11,7 @@ import java.io.IOException;
 public class OpenApiAuthFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-
+        HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
     }
 
     @Override
