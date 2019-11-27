@@ -11,8 +11,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-cloud-data-service</artifactId>
-    <name>spring-cloud-data-service</name>
+    <artifactId>spring-cloud-concurrency</artifactId>
+    <name>spring-cloud-concurrency</name>
     <url>http://maven.apache.org</url>
 
     <properties>

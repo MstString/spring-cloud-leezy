@@ -18,13 +18,8 @@
         <module name="spring-cloud-user-service" />
         <module name="spring-cloud-zipkin-server" />
         <module name="spring-cloud-eureka-server" />
-        <module name="spring-cloud-mybatis" />
-      </profile>
-      <profile name="Annotation profile for spring-cloud-leezy" enabled="true">
-        <sourceOutputDir name="../spring-cloud-data-service/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-cloud-data-service/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-concurrency" />
+        <module name="spring-cloud-mybatis" />
       </profile>
     </annotationProcessing>
   </component>
