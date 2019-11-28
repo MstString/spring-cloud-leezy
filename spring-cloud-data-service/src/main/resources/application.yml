@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: data-service
+    # zipkin配置
+  zipkin:
+    base-url: http://localhost:8240
+  sleuth:
+    sampler:
+      probability: 1.0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://leezy:123456@${eureka.host:127.0.0.1}:${eureka.port:8761}/eureka/
+  instance:
+    prefer-ip-address: true
+management:
+  endpoints: # 为Hystrix DashBoard 添加监控节点
+    web:
+      exposure:
+        include: hystrix.stream
+apollo:
+  meta: http://192.168.117.3:8081

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.3.RELEASE</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>top.leezy</groupId>
+	<artifactId>spring-cloud-leezy</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<!-- 服务发现 8761 -->
+		<module>spring-cloud-eureka-server</module>
+		<!-- 微服务网关 7777 -->
+		<module>spring-cloud-zuul-server</module>
+		<!-- 配置中心 9090 -->
+		<module>spring-cloud-config-server</module>
+		<!-- 断路器集群监控 9099 -->
+		<module>spring-cloud-hystrix-dashboard</module>
+		<!-- 公共包 -->
+		<module>spring-cloud-common</module>
+		<!-- 用户服务 9091 -->
+		<module>spring-cloud-user-service</module>
+		<!-- 数据服务 8099 -->
+		<module>spring-cloud-data-service</module>
+		<!-- Spring Cloud Admin 5000 -->
+		<module>spring-cloud-admin-server</module>
+		<!-- Spring Cloud GateWay 9999 -->
+		<module>spring-cloud-gateway</module>
+		<!-- Zipkin Server 8240 -->
+		<module>spring-cloud-zipkin-server</module>
+		<!-- MyBatis 自动生成数据库相关文件 -->
+    	<module>spring-cloud-mybatis</module>
+        <module>spring-cloud-hibernate</module>
+        <module>spring-cloud-filter</module>
+        <module>spring-cloud-concurrency</module>
+    </modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+		<common.version>0.0.1-SNAPSHOT</common.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+	</dependencies>
+
+	<!-- 引入Spring Cloud的依赖 -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
+
+</project>
